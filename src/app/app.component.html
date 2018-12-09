@@ -1,0 +1,49 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<mat-toolbar color="primary">
+  <h1>
+    App Component {{ title }}!
+  </h1>
+  <!-- Routed components go here -->
+  <mat-menu #appMenu="matMenu">
+    <ng-template matMenuContent>
+      <button mat-menu-item>  
+        <a routerLink="/alunos" routerLinkActive="active">Alunos</a>
+      </button>
+      <button mat-menu-item>  
+        <a routerLink="/pagamento" routerLinkActive="active">Pagamentp</a>
+      </button>
+      
+    </ng-template>
+  </mat-menu>
+  
+  <button mat-icon-button [matMenuTriggerFor]="appMenu">
+    <mat-icon>more_vert</mat-icon>
+  </button>
+  
+</mat-toolbar>  
+<mat-sidenav-container>
+  <mat-sidenav>Start</mat-sidenav>
+  <mat-sidenav position="end">End</mat-sidenav>
+  <section>
+    
+    <router-outlet></router-outlet>
+    <!-- <app-pagamento></app-pagamento>
+      <app-alunos></app-alunos> -->
+      
+      <button mat-raised-button color="primary">Criar Carro</button>
+      
+      <button mat-icon-button>
+        <mat-icon aria-label="Example icon-button with a heart icon">insert_drive_file</mat-icon>
+      </button>
+      
+      <button mat-raised-button color="primary">
+        Adicionar aos Favoritos
+        <mat-icon aria-label="Example icon-button with a heart icon">favorite</mat-icon>
+      </button>
+      
+    </section>
+  </mat-sidenav-container>
+  
+  
+  
+  

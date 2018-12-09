@@ -1,0 +1,24 @@
+[core]
+	repositoryformatversion = 0
+	filemode = false
+	bare = false
+	logallrefupdates = true
+	symlinks = false
+	ignorecase = true
+[gitflow "branch"]
+	master = master
+	develop = develop
+[gitflow "prefix"]
+	feature = feature/
+	bugfix = bugfix/
+	release = release/
+	hotfix = hotfix/
+	support = support/
+	versiontag = 
+[gitflow "path"]
+	hooks = C:/Projetos/meu-escolar/appMeuEscolar/.git/hooks
+[gitflow "branch.feature/pagto"]
+	base = develop
+[remote "origin"]
+	url = https://github.com/klawney/appMeuEscolar.git
+	fetch = +refs/heads/*:refs/remotes/origin/*
