@@ -1,46 +1,112 @@
 import { NgModule } from '@angular/core';
-
-// import {MatButtonModule, MatCheckboxModule} from '@angular/material';
-// import {MatIconModule} from '@angular/material/icon';
-import * as material from '@angular/material';
-// import {MatNativeDateModule} from '@angular/material';
+import {
+    MatAutocompleteModule,
+    MatButtonModule,
+    MatButtonToggleModule,
+    MatCheckboxModule,
+    MatToolbarModule,
+    MatTooltipModule,
+    MatCardModule,
+    MatChipsModule,
+    MatDatepickerModule,
+    MatDialogModule,
+    MatExpansionModule,
+    MatFormFieldModule,
+    MatGridListModule,
+    MatIconModule,
+    MatInputModule,
+    MatListModule,
+    MatMenuModule,
+    MatNativeDateModule,
+    MatPaginatorModule,
+    MatProgressBarModule,
+    MatProgressSpinnerModule,
+    MatRadioModule,
+    MatRippleModule,
+    MatSelectModule,
+    MatSidenavModule,
+    MatSliderModule,
+    MatSlideToggleModule,
+    MatSnackBarModule,
+    MatSortModule,
+    MatTableModule,
+    MatTabsModule,
+    MatStepperModule
+} from '@angular/material';
+import { CdkTableModule } from '@angular/cdk/table';
 
 @NgModule({
-  imports: [
-    material.MatButtonModule,
-    material.MatCheckboxModule,
-    material.MatIconModule,
-    material.MatToolbarModule,
-    material.MatMenuModule,
-    material.MatSidenavModule,
-    material.MatTableModule,
-    material.MatSortModule,
-    material.MatPaginatorModule,
-    material.MatFormFieldModule,
-    material.MatRadioModule,
-    material.MatSelectModule,
-    material.MatDatepickerModule,
-    material.MatNativeDateModule,
-    material.MatInputModule
-
-  ],
-  exports: [
-    material.MatButtonModule,
-    material.MatCheckboxModule,
-    material.MatIconModule,
-    material.MatToolbarModule,
-    material.MatMenuModule,
-    material.MatSidenavModule,
-    material.MatSortModule,
-    material.MatTableModule,
-    material.MatPaginatorModule,
-    material.MatFormFieldModule,
-    material.MatRadioModule,
-    material.MatSelectModule,
-    material.MatDatepickerModule,
-    material.MatNativeDateModule,
-    material.MatInputModule
-
-  ]
+    imports: [
+        MatAutocompleteModule,
+        MatButtonModule,
+        MatButtonToggleModule,
+        MatCardModule,
+        MatCheckboxModule,
+        MatChipsModule,
+        MatDatepickerModule,
+        MatDialogModule,
+        MatExpansionModule,
+        MatFormFieldModule,
+        MatGridListModule,
+        MatIconModule,
+        MatInputModule,
+        MatListModule,
+        MatMenuModule,
+        MatNativeDateModule,
+        MatPaginatorModule,
+        MatProgressBarModule,
+        MatProgressSpinnerModule,
+        MatRadioModule,
+        MatRippleModule,
+        MatSelectModule,
+        MatSidenavModule,
+        MatSliderModule,
+        MatSlideToggleModule,
+        MatSnackBarModule,
+        MatStepperModule,
+        MatSortModule,
+        MatTableModule,
+        MatTabsModule,
+        MatToolbarModule,
+        MatTooltipModule,
+        CdkTableModule
+    ],
+    exports: [
+        MatAutocompleteModule,
+        MatButtonModule,
+        MatButtonToggleModule,
+        MatCardModule,
+        MatCheckboxModule,
+        MatChipsModule,
+        MatDatepickerModule,
+        MatDialogModule,
+        MatExpansionModule,
+        MatGridListModule,
+        MatIconModule,
+        MatInputModule,
+        MatListModule,
+        MatMenuModule,
+        MatNativeDateModule,
+        MatPaginatorModule,
+        MatProgressBarModule,
+        MatProgressSpinnerModule,
+        MatRadioModule,
+        MatRippleModule,
+        MatSelectModule,
+        MatSidenavModule,
+        MatSliderModule,
+        MatSlideToggleModule,
+        MatSnackBarModule,
+        MatStepperModule,
+        MatSortModule,
+        MatTableModule,
+        MatTabsModule,
+        MatToolbarModule,
+        MatTooltipModule,
+        CdkTableModule
+    ]
 })
-export class MaterialModule { }
+export class MaterialModule {
+
+}
+
