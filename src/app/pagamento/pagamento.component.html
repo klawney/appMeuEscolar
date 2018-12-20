@@ -1,1 +1,92 @@
-PAgamentps
+<div>
+    <mat-card class="example-card">
+        <mat-card-header>
+            <div mat-card-avatar class="example-header-image"></div>
+            <mat-card-title>
+                <h1>Pagamento Mensalidade</h1>
+            </mat-card-title>
+            <!-- <mat-card-subtitle>Muduloo de Pagamento</mat-card-subtitle> -->
+        </mat-card-header>
+        <mat-card-content>            
+            <form [formGroup]="formPgto" class="campoForm">
+                <mat-grid-list cols="3" rowHeight="4:1">
+                    
+                    <!-- <mat-form-field class="campoForm">
+                        <input matInput placeholder="informe..." type="text" name="idPgto" formControlName="id_pgto">
+                    </mat-form-field> -->
+                <mat-grid-tile>
+                    <mat-form-field class="campoForm">
+                        <input matInput placeholder="Nº do Contrato" type="text" name="cont" formControlName="id_contrato">
+                    </mat-form-field>
+                    
+                </mat-grid-tile>
+                <mat-grid-tile [colspan]="2">
+                    <mat-form-field class="campoForm">
+                        <input matInput placeholder="Cliente" type="text" name="cli" formControlName="id_cliente">
+                    </mat-form-field>
+                    
+                </mat-grid-tile>
+                <mat-grid-tile>
+
+                    <mat-form-field class="campoForm">
+                        <input matInput placeholder="Mês" type="text" name="ref" formControlName="mes_ref">
+                    </mat-form-field>
+                </mat-grid-tile>
+                <mat-grid-tile>
+                    <mat-form-field>
+                        <input matInput [matDatepicker]="picker" placeholder="Data Vencimento" formControlName="dt_venc" disabled="true">
+                        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                        <mat-datepicker #picker disabled="false"></mat-datepicker>
+                    </mat-form-field> 
+                </mat-grid-tile>
+                <mat-grid-tile>
+                    <mat-form-field>
+                        <input matInput [matDatepicker]="picker2" placeholder="Data do Pagamento" formControlName="dt_pgto" disabled>
+                        <mat-datepicker-toggle matSuffix [for]="picker2"></mat-datepicker-toggle>
+                        <mat-datepicker #picker2  disabled="false"></mat-datepicker>
+                    </mat-form-field> 
+                </mat-grid-tile>
+                <mat-grid-tile>
+                    <mat-form-field class="campoForm">
+                        <input matInput placeholder="Valor Mensalidade" type="text" name="mens" formControlName="valor_mensal">
+                    </mat-form-field>
+                </mat-grid-tile>
+                <mat-grid-tile>
+                    <mat-form-field class="campoForm">
+                        <input matInput placeholder="Desconto" type="text" name="desc" formControlName="valor_desconto">
+                    </mat-form-field>
+                </mat-grid-tile>
+                <mat-grid-tile>
+                    <mat-form-field class="campoForm">
+                        <input matInput placeholder="Multa" type="text" name="multa" formControlName="valor_multa">
+                    </mat-form-field>
+                </mat-grid-tile>
+                <mat-grid-tile>
+                    <mat-form-field class="campoForm">
+                        <input matInput placeholder="Juros" type="text" name="juros" formControlName="valor_juros">
+                    </mat-form-field>
+                </mat-grid-tile>
+                <mat-grid-tile>
+                    <mat-form-field class="campoForm">
+                        <input matInput placeholder="Valor Pagamento" type="text" name="vlrPgto" formControlName="valor_pgto">
+                    </mat-form-field>
+                </mat-grid-tile>
+                </mat-grid-list>
+        </form>
+    </mat-card-content>
+    <mat-card-actions>
+        <button mat-button>Receber</button>
+        <button mat-button>Cancelar</button>
+    </mat-card-actions>
+</mat-card>
+{{formPgto.valor_desconto}}
+</div>
+<!-- 
+    
+    
+    
+    
+    
+</form>
+
+</div> -->
