@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 import { Pagamento } from './pagamento';
+import { FormControl, FormGroup, FormBuilder, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-pagamento',
@@ -8,25 +9,34 @@ import { Pagamento } from './pagamento';
   styleUrls: ['./pagamento.component.css']
 })
 export class PagamentoComponent implements OnInit {
-  pgto: Pagamento = {
-    id_pgto: 1,
-    id_contrato: 1,
-    id_cliente: 1,
-    mes_ref: '2018/01',
-    dt_venc: new Date(),
-    dt_pgto: new Date(),
-    valor_mensal: 333,
-    valor_desconto: 333,
-    valor_multa: 333,
-    valor_juros: 33,
-    valor_pgto: 33
-  };
-  constructor() { }
+
+  constructor(private formBuilder: FormBuilder) { }
+  pgto: Pagamento[] ;
+
+  hoje = new Date();
+  // formPgto = new FormGroup({
+  //   id_pgto: new FormControl('')
+  // });
+
+  formPgto = this.formBuilder.group({
+    id_pgto: [null, Validators.required],
+    id_contrato: [null, Validators.required],
+    id_cliente: [null, Validators.required],
+    mes_ref: [null, Validators.required],
+    dt_venc: [null, Validators.required],
+    dt_pgto: [null, Validators.required],
+    valor_mensal: [null, Validators.required],
+    valor_desconto: [null, Validators.required],
+    valor_multa: [null, Validators.required],
+    valor_juros: [null, Validators.required],
+    valor_pgto: [null, Validators.required]
+  });
 
   mostrar (r) {
     console.log(r);
   }
   ngOnInit() {
+    console.log(this);
   }
 
 }
